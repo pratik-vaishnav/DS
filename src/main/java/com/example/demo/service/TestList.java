@@ -12,11 +12,10 @@ public class TestList {
     @PostConstruct
     public void test() {
         linkedList.addToFront(1);
-        System.out.println(linkedList.getHeadValue());
         linkedList.addToFront(2);
-        System.out.println(linkedList.getHeadValue());
-
         linkedList.addToEnd(3);
+        linkedList.insertAfterKthNode(4, 2);
+
         System.out.println(linkedList.toString());
     }
 }

@@ -27,6 +27,20 @@ public class LinkedList {
         }
     }
 
+    public void insertAfterKthNode(int value, int kth) {
+        Node node = new Node(value);
+        Node current = head;
+        if (head == null) {
+            head = node;
+        } else {
+            for (int i = 1; i < kth; i++) {
+                current = current.getNextNode();
+            }
+            node.setNextNode(current.getNextNode());
+            current.setNextNode(node);
+        }
+    }
+
     public int getHeadValue() {
         if (head == null) {
             return -1;
