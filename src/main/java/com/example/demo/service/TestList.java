@@ -17,5 +17,10 @@ public class TestList {
         linkedList.insertAfterKthNode(4, 2);
 
         System.out.println(linkedList.toString());
+
+        linkedList.insertAtLast(5);
+        linkedList.insertAtLast(6);
+        linkedList.insertAtLast(7);
+        System.out.println(linkedList.toString());
     }
 }
