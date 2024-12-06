@@ -18,7 +18,7 @@ public class LinkedList {
 
     public void addToEnd(int value) {
         Node node = new Node(value);
-        if (head == null) {} else {
+        if (head == null) { this.head = node; } else {
             Node current = head;
             while (current.getNextNode() != null) {
                 current = current.getNextNode();
