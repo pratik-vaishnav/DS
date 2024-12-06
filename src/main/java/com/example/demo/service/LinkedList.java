@@ -16,6 +16,17 @@ public class LinkedList {
         head = newNode;
     }
 
+    public void addToEnd(int value) {
+        Node node = new Node(value);
+        if (head == null) {} else {
+            Node current = head;
+            while (current.getNextNode() != null) {
+                current = current.getNextNode();
+            }
+            current.setNextNode(node);
+        }
+    }
+
     public int getHeadValue() {
         if (head == null) {
             return -1;

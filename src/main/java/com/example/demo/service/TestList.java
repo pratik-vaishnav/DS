@@ -16,6 +16,7 @@ public class TestList {
         linkedList.addToFront(2);
         System.out.println(linkedList.getHeadValue());
 
+        linkedList.addToEnd(3);
         System.out.println(linkedList.toString());
     }
 }
